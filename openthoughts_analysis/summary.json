@@ -1,0 +1,46 @@
+{
+  "dataset": "open-thoughts/OpenThoughts-114k",
+  "config": "metadata",
+  "split": "train",
+  "n_rows": 2000,
+  "seed": 20260815,
+  "wait_trace_prevalence": 0.993,
+  "mean_wait_count_per_trace": 21.9475,
+  "mean_wait_reversal_proxy_rate_among_wait_traces": 0.4392086198441655,
+  "matched_control": {
+    "n": 35864,
+    "reversal_rate": 0.2559391032790542
+  },
+  "domain_summary": [
+    {
+      "domain": "math",
+      "traces": 1500,
+      "wait_prevalence": 0.9973333333333333,
+      "mean_wait_rate_per_1k_words": 6.002898554811662,
+      "mean_trace_words": 3499.804
+    },
+    {
+      "domain": "code",
+      "traces": 400,
+      "wait_prevalence": 1.0,
+      "mean_wait_rate_per_1k_words": 6.7164215428807825,
+      "mean_trace_words": 4939.37
+    },
+    {
+      "domain": "puzzle",
+      "traces": 100,
+      "wait_prevalence": 0.9,
+      "mean_wait_rate_per_1k_words": 3.674585508386235,
+      "mean_trace_words": 836.78
+    }
+  ],
+  "plots": [
+    "/home/ubuntu/work/openthoughts_analysis/wait_prevalence_by_domain.png",
+    "/home/ubuntu/work/openthoughts_analysis/wait_vs_matched_control.png",
+    "/home/ubuntu/work/openthoughts_analysis/wait_first_position.png"
+  ],
+  "raw_data": "/home/ubuntu/work/openthoughts_analysis/metadata_rows.jsonl",
+  "metrics": "/home/ubuntu/work/openthoughts_analysis/trace_metrics.csv",
+  "qualitative_samples": "/home/ubuntu/work/openthoughts_analysis/qualitative_samples.jsonl",
+  "interpretation_warning": "All metrics are observational lexical/structural proxies; no causal faithfulness claim is made."
+}
